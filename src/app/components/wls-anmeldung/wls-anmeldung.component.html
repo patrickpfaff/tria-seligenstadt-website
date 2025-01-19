@@ -1,0 +1,137 @@
+<h1>Anmeldung zur Winterlaufserie</h1>
+
+<div class="warning-box">
+    <ng-icon color="red" name="bootstrapExclamationTriangle"></ng-icon>
+    <p>
+        Achtung! Online-Anmeldung für die Läufe jeweils nur bis eine Woche vor dem Lauf. Wird das Startgeld nicht überwiesen, <br/> sondern am Wettkampftag bar bezahlt, wird die Meldung als Nachmeldung mit erhöhtem Startgeld behandelt.
+    </p>
+</div>
+
+<h4>Anmeldeformular</h4>
+<p class="info-text">
+    Du kannst dieses Formular benutzen, um dich online anzumelden. Das Startgeld bitte zeitgleich überweisen.<br/>
+    Nicht bezahlte Meldungen werden nach zwei Wochen gelöscht. Einzelmeldungen können nur für den aktuell nächsten Lauf abgegeben werden.
+</p>
+
+<div class="form-container">
+    <p-floatlabel variant="on" style="margin-right: 10px;">
+        <input pInputText id="on_label" autocomplete="off" />
+        <label for="on_label">Vorname</label>
+    </p-floatlabel>
+
+    <p-floatlabel variant="on">
+        <input pInputText id="on_label" autocomplete="off" />
+        <label for="on_label">Nachname</label>
+    </p-floatlabel>
+
+    <p-dropdown [options]="genders" optionLabel="label" placeholder="Geschlecht auswählen" class="w-full md:w-56" />
+
+    <p-floatlabel variant="on">
+        <input pInputText id="on_label" autocomplete="off" />
+        <label for="on_label">Jahrgang</label>
+    </p-floatlabel>
+
+    <p-floatlabel variant="on">
+        <input pInputText id="on_label" autocomplete="off" />
+        <label for="on_label">Email</label>
+    </p-floatlabel>
+
+    <p-floatlabel variant="on">
+        <input pInputText id="on_label" autocomplete="off" />
+        <label for="on_label">Verein</label>
+    </p-floatlabel>
+
+    <table class="event-table">
+        <tr>
+            <th>Veranstaltung</th>
+            <th>Serie 1000m</th>
+            <th>Serie 5 km</th>
+            <th>Serie 10 km</th>
+            <th>Einzel 1000m</th>
+            <th>Einzel 5 km</th>
+            <th>Einzel 10 km</th>
+        </tr>
+        <tr>
+            <td>18.11.2023</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>21.12.2023</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>18.01.2024</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>15.02.2024</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
+            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
+            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
+        </tr>
+        <tr>
+            <td>Startgeld bei Voranmeldung</td>
+            <td>10,00 €</td>
+            <td>26,00 €</td>
+            <td>32,00 €</td>
+            <td>3,00 €</td>
+            <td>8,00 €</td>
+            <td>10,00 €</td>
+        </tr>
+    </table>
+
+    <div>
+        <h5>Das Startgeld überweise ich auf das Konto</h5>
+        Tria Team Seligenstadt
+        <table>
+            <tr>
+                <td>Konto</td>
+                <td>1136720</td>
+            </tr>
+            <tr>
+                <td>BLZ</td>
+                <td>508 521 24</td>
+            </tr>
+            <tr>
+                <td>IBAN</td>
+                <td>DE35 5065 2124 0001 1367 20</td>
+            </tr>
+        </table>
+
+        <div class="warning-box" style="margin-top: 20px;">
+            <ng-icon name="bootstrapInfoCircle" size="20"></ng-icon>
+            <p style="font-style: italic; font-size: 14px;">
+            Mit Absenden des Formulars gebe ich mein Einverständnis zur elektronischen Speicherung meiner Daten bis zum Ende der vierten Veranstaltung im Februar.
+            Ich starte auf eigene Gefahr und nehme zur Kenntnis, dass der Veranstalter keine Haftung für Diebstahl oder Unfall übernimmt.
+            </p>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top:10px">
+            <p-checkbox binary="true" class="mr-4"></p-checkbox>
+            <p style="margin-left: 5px">Ich bin zusätzlich damit einverstanden, im nächsten Jahr einmalig per eMail auf die Winterlaufserie aufmerksam gemacht zu werden.</p>
+        </div>
+
+        <div style="margin-top: 10px;">
+            <p-button label="Jetzt anmelden" class="mt-4" ></p-button>
+        </div>
+    </div>
+</div>
+
