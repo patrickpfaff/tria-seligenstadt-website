@@ -24,6 +24,25 @@
     }
 }
 
+.info-text {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+}
+
+.checkbox-label {
+    margin-left: 5px;
+}
+
+.submit-button-container {
+    margin-top: 10px;
+}
+
 .event-table {
     margin-top:20px;
     border: 1px solid white;
@@ -34,6 +53,10 @@
         padding: 5px;
         text-align: center; /* Center items in their cells */
     }
+}
+
+.data-protection-info {
+    margin-top: 20px;
 }
 
 ng-icon {

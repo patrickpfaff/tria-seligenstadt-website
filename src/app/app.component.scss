@@ -1,0 +1,12 @@
+.main-container {
+    display: flex;
+}
+
+.navbar-container {
+    width: 180px;
+}
+
+.main-content-container {
+    flex-grow: 1;
+    padding: 20px;
+}

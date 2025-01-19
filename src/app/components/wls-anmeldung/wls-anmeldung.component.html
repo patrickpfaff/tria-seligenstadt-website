@@ -14,7 +14,7 @@
 </p>
 
 <div class="form-container">
-    <p-floatlabel variant="on" style="margin-right: 10px;">
+    <p-floatlabel variant="on">
         <input pInputText id="on_label" autocomplete="off" />
         <label for="on_label">Vorname</label>
     </p-floatlabel>
@@ -83,9 +83,9 @@
             <td></td>
             <td></td>
             <td></td>
-            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
-            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
-            <td><input type="radio" id="html4" name="fav_language" value="HTML"></td>
+            <td><input type="radio" id="html4_1" name="fav_language" value="HTML"><label for="html4_1">1000m</label></td>
+            <td><input type="radio" id="html4_2" name="fav_language" value="HTML"><label for="html4_2">5 km</label></td>
+            <td><input type="radio" id="html4_3" name="fav_language" value="HTML"><label for="html4_3">10 km</label></td>
         </tr>
         <tr>
             <td>Startgeld bei Voranmeldung</td>
@@ -116,20 +116,20 @@
             </tr>
         </table>
 
-        <div class="warning-box" style="margin-top: 20px;">
+        <div class="warning-box data-protection-info">
             <ng-icon name="bootstrapInfoCircle" size="20"></ng-icon>
-            <p style="font-style: italic; font-size: 14px;">
+            <p class="info-text">
             Mit Absenden des Formulars gebe ich mein Einverständnis zur elektronischen Speicherung meiner Daten bis zum Ende der vierten Veranstaltung im Februar.
             Ich starte auf eigene Gefahr und nehme zur Kenntnis, dass der Veranstalter keine Haftung für Diebstahl oder Unfall übernimmt.
             </p>
         </div>
 
-        <div style="display: flex; align-items: center; margin-top:10px">
+        <div class="checkbox-container">
             <p-checkbox binary="true" class="mr-4"></p-checkbox>
-            <p style="margin-left: 5px">Ich bin zusätzlich damit einverstanden, im nächsten Jahr einmalig per eMail auf die Winterlaufserie aufmerksam gemacht zu werden.</p>
+            <p class="checkbox-label">Ich bin zusätzlich damit einverstanden, im nächsten Jahr einmalig per eMail auf die Winterlaufserie aufmerksam gemacht zu werden.</p>
         </div>
 
-        <div style="margin-top: 10px;">
+        <div class="submit-button-container">
             <p-button label="Jetzt anmelden" class="mt-4" ></p-button>
         </div>
     </div>
